@@ -1,17 +1,3 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
-
 // Mobile menu toggle
 function toggleMobileMenu() {
     const navLinks = document.querySelector('.nav-links');
@@ -21,7 +7,7 @@ function toggleMobileMenu() {
     mobileBtn.classList.toggle('active');
 }
 
-// Add active class to mobile menu when open
+// Add mobile menu styles
 const style = document.createElement('style');
 style.textContent = `
     .nav-links.active {
@@ -32,8 +18,9 @@ style.textContent = `
         left: 0;
         right: 0;
         background: white;
-        padding: 20px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 24px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        border-top: 1px solid #E2E8F0;
     }
     
     .mobile-menu-btn.active span:nth-child(1) {
@@ -51,16 +38,19 @@ style.textContent = `
 document.head.appendChild(style);
 
 // Form submission handler
-document.querySelector('.contact-form form')?.addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Thank you for your message! We will get back to you soon.');
-    this.reset();
-});
+const contactForm = document.querySelector('.contact-form-page');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for your message! We will get back to you soon.');
+        this.reset();
+    });
+}
 
-// Scroll animation for sections
+// Smooth scroll animation for sections
 const observerOptions = {
     threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    rootMargin: '0px 0px -80px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -72,20 +62,51 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all sections
-document.querySelectorAll('section').forEach(section => {
+// Observe sections for animation
+document.querySelectorAll('section:not(.hero-home):not(.page-header)').forEach(section => {
     section.style.opacity = '0';
-    section.style.transform = 'translateY(20px)';
-    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    section.style.transform = 'translateY(30px)';
+    section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
     observer.observe(section);
 });
 
-// Navbar background on scroll
+// Enhanced navbar on scroll
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.08)';
+        navbar.style.padding = '16px 0';
     } else {
-        navbar.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.05)';
+        navbar.style.boxShadow = 'none';
+        navbar.style.padding = '20px 0';
     }
 });
+
+// Animate stats on scroll
+const statItems = document.querySelectorAll('.stat-item h3');
+const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const target = entry.target;
+            const finalValue = target.textContent;
+            const numericValue = parseInt(finalValue);
+            
+            if (!isNaN(numericValue)) {
+                let current = 0;
+                const increment = numericValue / 50;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= numericValue) {
+                        target.textContent = finalValue;
+                        clearInterval(timer);
+                    } else {
+                        target.textContent = Math.floor(current) + (finalValue.includes('+') ? '+' : '');
+                    }
+                }, 30);
+            }
+            statsObserver.unobserve(target);
+        }
+    });
+}, { threshold: 0.5 });
+
+statItems.forEach(item => statsObserver.observe(item));

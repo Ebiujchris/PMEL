@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -18,12 +18,12 @@
                     <h2>PMEL Advisory Centre</h2>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#expertise">Expertise</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="expertise.html">Expertise</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
                     <span></span>
@@ -35,225 +35,93 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero-home">
+        <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
-                <h1>Evidence-Driven Consultancy for Sustainable Development</h1>
-                <p class="hero-subtitle">Regional expertise in Programme Management, Monitoring & Evaluation, Research, and Organizational Development across East Africa</p>
+                <span class="hero-badge">Regional Excellence in Development Consultancy</span>
+                <h1>Evidence-Driven Solutions for Sustainable Impact</h1>
+                <p class="hero-subtitle">Transforming development and humanitarian programming across East Africa through rigorous research, strategic management, and innovative capacity building</p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Request Consultation</a>
-                    <a href="#services" class="btn btn-secondary">Our Services</a>
+                    <a href="contact.html" class="btn btn-primary">Request Consultation</a>
+                    <a href="services.html" class="btn btn-secondary">Explore Services</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- About Preview -->
+    <section class="about-preview">
         <div class="container">
             <div class="section-header">
-                <h2>About Us</h2>
-                <div class="divider"></div>
+                <span class="section-label">Who We Are</span>
+                <h2>Leading Regional Consultancy in Programme Management & Evaluation</h2>
+                <p class="section-intro">PMEL Advisory Centre delivers evidence-based consultancy services that strengthen development and humanitarian interventions across Africa</p>
             </div>
-            <div class="about-content">
-                <p class="lead">PMEL Advisory Centre is a regional consultancy and advisory firm specializing in Programme Management, Monitoring and Evaluation, Research, Learning, Organizational Development, and Capacity Strengthening across East Africa and the wider African region.</p>
-                <div class="about-grid">
-                    <div class="about-card">
-                        <h3>Programme Management</h3>
-                        <p>End-to-end technical support in programme design, implementation, and monitoring</p>
+            <div class="about-content-grid">
+                <div class="about-text">
+                    <p>We are a regional consultancy and advisory firm specializing in Programme Management, Monitoring and Evaluation, Research, Learning, Organizational Development, and Capacity Strengthening across East Africa and the wider African region.</p>
+                    <p>Our multidisciplinary team of resident consultants, technical experts, and research specialists brings extensive experience supporting INGOs, NGOs, government agencies, UN bodies, and civil society organizations.</p>
+                    <a href="about.html" class="btn btn-text">Learn More About Us →</a>
+                </div>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-number">01</div>
+                        <h4>Programme Management</h4>
+                        <p>End-to-end technical support in design, implementation, and monitoring</p>
                     </div>
-                    <div class="about-card">
-                        <h3>Research & Evaluation</h3>
-                        <p>Rigorous methodologies and advanced data systems for measurable results</p>
+                    <div class="feature-item">
+                        <div class="feature-number">02</div>
+                        <h4>Research & Evaluation</h4>
+                        <p>Rigorous methodologies and advanced data systems</p>
                     </div>
-                    <div class="about-card">
-                        <h3>Capacity Building</h3>
-                        <p>Strengthening institutional performance and organizational resilience</p>
+                    <div class="feature-item">
+                        <div class="feature-number">03</div>
+                        <h4>Capacity Building</h4>
+                        <p>Strengthening institutional performance and resilience</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- Services Preview -->
+    <section class="services-preview">
         <div class="container">
             <div class="section-header">
-                <h2>Core Consulting Areas</h2>
-                <div class="divider"></div>
-                <p>Comprehensive consultancy services across key development sectors</p>
+                <span class="section-label">What We Do</span>
+                <h2>Comprehensive Consultancy Across Key Development Sectors</h2>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
+            <div class="services-grid-home">
+                <div class="service-card-home">
                     <h3>Public Health & Health Systems</h3>
-                    <p>Strengthening health systems and improving public health outcomes through evidence-based interventions</p>
+                    <p>Strengthening health systems and improving outcomes through evidence-based interventions</p>
+                    <a href="services.html" class="card-link">Learn More →</a>
                 </div>
-                <div class="service-card">
+                <div class="service-card-home">
                     <h3>Climate Change & Resilience</h3>
                     <p>Climate adaptation programming and resilience building for sustainable communities</p>
+                    <a href="services.html" class="card-link">Learn More →</a>
                 </div>
-                <div class="service-card">
-                    <h3>Agriculture & Food Security</h3>
-                    <p>Livelihoods enhancement and food security interventions for rural communities</p>
-                </div>
-                <div class="service-card">
-                    <h3>Gender Equality & Inclusion</h3>
-                    <p>Promoting inclusive development and social inclusion across all interventions</p>
-                </div>
-                <div class="service-card">
+                <div class="service-card-home">
                     <h3>Humanitarian Response</h3>
-                    <p>Refugee protection, emergency response, and resilience building in crisis contexts</p>
+                    <p>Emergency response, refugee protection, and resilience in crisis contexts</p>
+                    <a href="services.html" class="card-link">Learn More →</a>
                 </div>
-                <div class="service-card">
-                    <h3>Mental Health & Psychosocial Support</h3>
-                    <p>MHPSS programming for vulnerable populations and crisis-affected communities</p>
-                </div>
+            </div>
+            <div class="text-center">
+                <a href="services.html" class="btn btn-primary">View All Services</a>
             </div>
         </div>
     </section>
 
-    <!-- Expertise Section -->
-    <section id="expertise" class="expertise">
+    <!-- CTA Section -->
+    <section class="cta-section">
         <div class="container">
-            <div class="section-header">
-                <h2>Our Technical Expertise</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="expertise-grid">
-                <div class="expertise-item">
-                    <h4>Programme Design & Management</h4>
-                    <p>Technical leadership in design, planning, budgeting, and resource mobilization strategies</p>
-                </div>
-                <div class="expertise-item">
-                    <h4>Policy Development</h4>
-                    <p>Strategic documentation, policy briefs, and partnership frameworks</p>
-                </div>
-                <div class="expertise-item">
-                    <h4>MERL Systems</h4>
-                    <p>Monitoring, Evaluation, Research and Learning with mixed-methods approaches</p>
-                </div>
-                <div class="expertise-item">
-                    <h4>Data Management & Analysis</h4>
-                    <p>Advanced analytics using SPSS, STATA, NVivo, and EPI-INFO</p>
-                </div>
-                <div class="expertise-item">
-                    <h4>Digital Data Systems</h4>
-                    <p>ODK, SurveyCTO, KoboToolbox deployment with real-time monitoring</p>
-                </div>
-                <div class="expertise-item">
-                    <h4>Capacity Development</h4>
-                    <p>Training, mentorship, and institutional strengthening programs</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="why-choose">
-        <div class="container">
-            <div class="section-header">
-                <h2>Why Choose PMEL Advisory Centre</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="why-grid">
-                <div class="why-card">
-                    <h3>African Expertise</h3>
-                    <p>Deep understanding of African development and humanitarian contexts</p>
-                </div>
-                <div class="why-card">
-                    <h3>Multidisciplinary Team</h3>
-                    <p>Experienced consultants and technical specialists across sectors</p>
-                </div>
-                <div class="why-card">
-                    <h3>Evidence-Based</h3>
-                    <p>Results-oriented approaches grounded in rigorous research</p>
-                </div>
-                <div class="why-card">
-                    <h3>Innovation-Driven</h3>
-                    <p>Technology-driven solutions for modern development challenges</p>
-                </div>
-                <div class="why-card">
-                    <h3>Quality Assurance</h3>
-                    <p>Commitment to professionalism, integrity, and excellence</p>
-                </div>
-                <div class="why-card">
-                    <h3>Client-Centered</h3>
-                    <p>Participatory methodologies and timely service delivery</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team" class="team">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Leadership Team</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="team-grid">
-                <div class="team-card">
-                    <div class="team-avatar">TA</div>
-                    <h3>Tumwebaze Abert</h3>
-                    <p class="role">Executive Director</p>
-                    <div class="team-contact">
-                        <a href="mailto:tumwebazeabert@gmail.com">tumwebazeabert@gmail.com</a>
-                        <a href="tel:+256772636730">+256 772 636 730</a>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <div class="team-avatar">KB</div>
-                    <h3>Kyomuhendo Brian Gilbert</h3>
-                    <p class="role">Director Administration</p>
-                    <div class="team-contact">
-                        <a href="mailto:bryankyo@gmail.com">bryankyo@gmail.com</a>
-                        <a href="tel:+256772725437">+256 772 725 437</a>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <div class="team-avatar">KE</div>
-                    <h3>Kyewalabye Ester Wani</h3>
-                    <p class="role">Director Finance</p>
-                    <div class="team-contact">
-                        <a href="mailto:eskyewalabye@yahoo.uk.co">eskyewalabye@yahoo.uk.co</a>
-                        <a href="tel:+256772689071">+256 772 689 071</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Get In Touch</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h4>Address</h4>
-                        <p>P.O. Box 109752<br>Kampala, Uganda</p>
-                    </div>
-                    <div class="contact-item">
-                        <h4>Email</h4>
-                        <p><a href="mailto:pmelcentre@gmail.com">pmelcentre@gmail.com</a></p>
-                    </div>
-                    <div class="contact-item">
-                        <h4>Phone</h4>
-                        <p><a href="tel:+256774725437">+256 774 725 437</a></p>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form>
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <input type="text" placeholder="Subject" required>
-                        <textarea rows="5" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
+            <div class="cta-content">
+                <h2>Ready to Transform Your Development Programming?</h2>
+                <p>Partner with PMEL Advisory Centre for evidence-driven solutions that deliver measurable impact</p>
+                <a href="contact.html" class="btn btn-white">Get In Touch</a>
             </div>
         </div>
     </section>
@@ -269,10 +137,10 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#expertise">Expertise</a></li>
-                        <li><a href="#team">Team</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="expertise.html">Expertise</a></li>
+                        <li><a href="team.html">Team</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
