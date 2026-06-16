@@ -3,203 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - PMEL Advisory Centre</title>
+    <title>Our Services - PMEL Advisory Centre</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <h2>PMEL Advisory Centre</h2>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html" class="active">Services</a></li>
-                    <li><a href="expertise.html">Expertise</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+            <div class="logo-area">
+                <img src="images/logo.jpeg" alt="PMEL Logo" style="height: 50px; width: auto; object-fit: contain; mix-blend-mode: multiply;">
             </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="sectors.html">Sectors</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Get in Touch</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <span class="breadcrumb">Home / Services</span>
-            <h1>Our Services</h1>
-            <p>Comprehensive consultancy across key development sectors</p>
-        </div>
-    </section>
-
-    <!-- Services Content -->
-    <section class="services-main">
-        <div class="container">
-            <div class="section-intro-text">
-                <p class="lead">PMEL Advisory Centre provides high-quality, evidence-driven consultancy, technical management support, research, and advisory services that strengthen the effectiveness, accountability, and impact of development and humanitarian interventions across Africa.</p>
+    <!-- Services Top -->
+    <section class="section-padding bg-white">
+        <div class="container grid-2">
+            <div>
+                <h1 style="margin-bottom: 1.5rem;">Our Services</h1>
+                <p style="font-size: 1.1rem; max-width: 500px;">We offer a comprehensive range of consultancy services that support the entire programme cycle and strengthen organizational performance.</p>
             </div>
-
-            <div class="services-detailed">
-                <div class="service-detail-card">
-                    <div class="service-detail-header">
-                        <h2>Public Health & Health Systems Strengthening</h2>
-                    </div>
-                    <div class="service-detail-content">
-                        <p>We support health systems strengthening initiatives through evidence-based interventions, policy development, and capacity building. Our work includes health programme design, implementation support, monitoring and evaluation of health interventions, and strengthening health information systems.</p>
-                        <ul class="service-list">
-                            <li>Health programme design and management</li>
-                            <li>Health systems assessments and strengthening</li>
-                            <li>Disease surveillance and response systems</li>
-                            <li>Community health programming</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="service-detail-card">
-                    <div class="service-detail-header">
-                        <h2>Climate Change Adaptation & Resilience</h2>
-                    </div>
-                    <div class="service-detail-content">
-                        <p>Climate adaptation programming and resilience building for sustainable communities. We support climate-smart interventions, disaster risk reduction, and community resilience programming across vulnerable populations.</p>
-                        <ul class="service-list">
-                            <li>Climate vulnerability assessments</li>
-                            <li>Climate adaptation strategy development</li>
-                            <li>Disaster risk reduction programming</li>
-                            <li>Community resilience building</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="service-detail-card">
-                    <div class="service-detail-header">
-                        <h2>Agriculture, Food Security & Livelihoods</h2>
-                    </div>
-                    <div class="service-detail-content">
-                        <p>Livelihoods enhancement and food security interventions for rural communities. We provide technical support in agricultural value chain development, market systems strengthening, and sustainable livelihoods programming.</p>
-                        <ul class="service-list">
-                            <li>Agricultural value chain analysis</li>
-                            <li>Food security assessments</li>
-                            <li>Livelihoods programming and market systems</li>
-                            <li>Rural development initiatives</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="service-detail-card">
-                    <div class="service-detail-header">
-                        <h2>Gender Equality & Social Inclusion</h2>
-                    </div>
-                    <div class="service-detail-content">
-                        <p>Promoting inclusive development and social inclusion across all interventions. We support gender mainstreaming, women's empowerment programming, and social inclusion strategies.</p>
-                        <ul class="service-list">
-                            <li>Gender analysis and mainstreaming</li>
-                            <li>Women's empowerment programming</li>
-                            <li>Social inclusion strategies</li>
-                            <li>Youth development initiatives</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="service-detail-card">
-                    <div class="service-detail-header">
-                        <h2>Humanitarian Response & Refugee Protection</h2>
-                    </div>
-                    <div class="service-detail-content">
-                        <p>Emergency response, refugee protection, and resilience building in crisis contexts. We provide technical support in humanitarian needs assessments, emergency response programming, and refugee integration.</p>
-                        <ul class="service-list">
-                            <li>Humanitarian needs assessments</li>
-                            <li>Emergency response programming</li>
-                            <li>Refugee protection and integration</li>
-                            <li>Humanitarian-development nexus programming</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="service-detail-card">
-                    <div class="service-detail-header">
-                        <h2>Mental Health & Psychosocial Support</h2>
-                    </div>
-                    <div class="service-detail-content">
-                        <p>MHPSS programming for vulnerable populations and crisis-affected communities. We support mental health system strengthening, psychosocial support interventions, and community-based mental health programming.</p>
-                        <ul class="service-list">
-                            <li>MHPSS needs assessments</li>
-                            <li>Mental health programme design</li>
-                            <li>Community-based psychosocial support</li>
-                            <li>Mental health capacity building</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="service-detail-card">
-                    <div class="service-detail-header">
-                        <h2>Community Development & Social Protection</h2>
-                    </div>
-                    <div class="service-detail-content">
-                        <p>Supporting community-led development initiatives and social protection systems. We provide technical assistance in community mobilization, social protection programming, and local governance strengthening.</p>
-                        <ul class="service-list">
-                            <li>Community development programming</li>
-                            <li>Social protection systems strengthening</li>
-                            <li>Local governance and participation</li>
-                            <li>Community-based organizations support</li>
-                        </ul>
-                    </div>
-                </div>
+            <div>
+                <img src="images/services_plant_soil_1781523844999.png" alt="Plant growing from soil" style="width: 100%; border-radius: 12px; object-fit: cover; max-height: 350px;">
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Need Expert Consultancy Support?</h2>
-                <p>Let's discuss how we can support your development programming</p>
-                <a href="contact.html" class="btn btn-white">Contact Us Today</a>
+    <!-- Services Grid -->
+    <section class="section-padding bg-white" style="padding-top: 0;">
+        <div class="container grid-2">
+            
+            <div class="effect-card">
+                <h4 style="color: var(--primary);">Programme Design & Management</h4>
+                <p style="margin-bottom: 0;">Designing and managing effective programmes that deliver results.</p>
             </div>
+
+            <div class="effect-card">
+                <h4 style="color: var(--primary);">Grant Proposal & Concept Note Development</h4>
+                <p style="margin-bottom: 0;">Crafting compelling proposals that attract funding.</p>
+            </div>
+
+            <div class="effect-card">
+                <h4 style="color: var(--primary);">Monitoring, Evaluation, Research & Learning (MERL)</h4>
+                <p style="margin-bottom: 0;">Generating evidence and insights to inform better decisions.</p>
+            </div>
+
+            <div class="effect-card">
+                <h4 style="color: var(--primary);">Strategic Planning & Policy Development</h4>
+                <p style="margin-bottom: 0;">Helping organizations and institutions develop forward-looking strategies.</p>
+            </div>
+
+            <div class="effect-card">
+                <h4 style="color: var(--primary);">Baseline, Midline & Endline Studies</h4>
+                <p style="margin-bottom: 0;">Providing robust data for planning, tracking and learning.</p>
+            </div>
+
+            <div class="effect-card">
+                <h4 style="color: var(--primary);">Organizational Capacity Assessments</h4>
+                <p style="margin-bottom: 0;">Assessing capacities and providing actionable recommendations.</p>
+            </div>
+
+            <div class="effect-card">
+                <h4 style="color: var(--primary);">Impact Evaluations & Assessments</h4>
+                <p style="margin-bottom: 0;">Measuring results and assessing impact to improve outcomes.</p>
+            </div>
+
+            <div class="effect-card">
+                <h4 style="color: var(--primary);">Training, Facilitation & Capacity Building</h4>
+                <p style="margin-bottom: 0;">Building skills and capacities for individuals and organizations.</p>
+            </div>
+
         </div>
     </section>
+
+    <!-- Bottom CTA -->
+    <div class="bottom-cta" style="border-radius: 12px; max-width: 1200px; margin: 0 auto 5rem; display: flex; justify-content: space-between; align-items: center; padding: 2.5rem 3rem;">
+        <h3 style="color: var(--white); margin: 0; font-size: 1.25rem;">Let's work together to build solutions that last.</h3>
+        <a href="contact.html" class="btn btn-outline" style="background-color: var(--white); color: var(--accent); font-weight: 700;">Get in Touch</a>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>PMEL Advisory Centre</h3>
-                    <p>Evidence-driven consultancy for sustainable development across Africa</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="expertise.html">Expertise</a></li>
-                        <li><a href="team.html">Team</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>P.O. Box 109752, Kampala</p>
-                    <p>pmelcentre@gmail.com</p>
-                    <p>+256 774 725 437</p>
-                </div>
+        <div class="container grid-4">
+            <div>
+                <div class="footer-logo">PMEL center</div>
+                <p style="font-size: 0.9rem;">Your trusted partner in Programme Management, Monitoring, Evaluation, Research and Learning.</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 PMEL Advisory Centre. All rights reserved.</p>
+            <div>
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="sectors.html">Sectors</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="insights.html">Insights</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Our Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Programme Design & Management</a></li>
+                    <li><a href="#">Monitoring, Evaluation, Research & Learning</a></li>
+                    <li><a href="#">Grant Proposal Development</a></li>
+                    <li><a href="#">Strategic Planning</a></li>
+                    <li><a href="#">Training & Capacity Building</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Our Sectors</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Climate Change & Resilience</a></li>
+                    <li><a href="#">Agriculture & Food Security</a></li>
+                    <li><a href="#">Education & Child Protection</a></li>
+                    <li><a href="#">Humanitarian Response</a></li>
+                    <li><a href="#">Livelihoods & Community Development</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div>&copy; 2026 PMEL Advisory Centre. All Rights Reserved.</div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
             </div>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>

@@ -5,166 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - PMEL Advisory Centre</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <h2>PMEL Advisory Centre</h2>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="expertise.html">Expertise</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+            <div class="logo-area">
+                <img src="images/logo.jpeg" alt="PMEL Logo" style="height: 50px; width: auto; object-fit: contain; mix-blend-mode: multiply;">
             </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="sectors.html">Sectors</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Get in Touch</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <span class="breadcrumb">Home / About Us</span>
-            <h1>About PMEL Advisory Centre</h1>
-            <p>Regional excellence in development consultancy and capacity strengthening</p>
-        </div>
-    </section>
+    <!-- About Hero -->
+    <section class="about-hero section-padding">
+        <div class="container grid-2">
+            <div>
+                <h1>About Us</h1>
+                <p>PMEL Advisory Centre is a regional consultancy and advisory firm providing high-quality services in Programme Management, Monitoring & Evaluation, Research, Learning, Organizational Development, and Capacity Strengthening.</p>
+                <p>We work with governments, INGOs, UN agencies, development partners and the private sector to design, implement, monitor and evaluate high-impact programmes that transform lives.</p>
+                
+                <div class="effect-card" style="margin-top: 2rem;">
+                    <h4 style="color: var(--accent);">Our Mission</h4>
+                    <p style="margin-bottom: 0;">To empower organizations and communities with evidence, innovative solutions and practical support for lasting impact and sustainable development.</p>
+                </div>
 
-    <!-- About Content -->
-    <section class="about-main">
-        <div class="container">
-            <div class="content-layout">
-                <div class="content-main">
-                    <h2>Who We Are</h2>
-                    <p class="lead">PMEL Advisory Centre is a regional consultancy and advisory firm specializing in Programme Management, Monitoring and Evaluation, Research, Learning, Organizational Development, and Capacity Strengthening across East Africa and the wider African region.</p>
-                    
-                    <p>The Centre is composed of a highly skilled and experienced multidisciplinary team of resident consultants, technical experts, and research specialists with strong expertise in development and humanitarian programming. Our team has extensive experience supporting INGOs, NGOs, government agencies, UN bodies, and civil society organizations in delivering high-quality research, evaluations, and development consultancy services.</p>
-                    
-                    <p>We provide end-to-end technical support in programme design, implementation, monitoring, evaluation, and learning, applying rigorous methodologies, advanced data systems, and innovative approaches to ensure efficiency, accountability, and measurable results. Our work spans key sectors including public health, humanitarian response, climate resilience, governance, agriculture, education, gender equality, and livelihoods.</p>
-                    
-                    <p>PMEL Advisory Centre is committed to delivering practical, results-oriented, and evidence-based consultancy solutions that strengthen institutional performance and support informed decision-making. Through strong technical leadership and innovative project management approaches, we enable partners to effectively design, manage, and implement complex development and humanitarian programmes for sustainable impact.</p>
+                <div class="effect-card" style="margin-top: 1.5rem;">
+                    <h4 style="color: var(--accent);">Our Vision</h4>
+                    <p style="margin-bottom: 0;">A world where evidence drives decisions and communities thrive in resilience, equity and opportunity.</p>
                 </div>
-                <div class="content-sidebar">
-                    <div class="sidebar-card">
-                        <h3>Our Vision</h3>
-                        <p>To become a centre of excellence in programme management, monitoring, evaluation, research, learning, and institutional development solutions for sustainable development.</p>
-                    </div>
-                    <div class="sidebar-card">
-                        <h3>Our Mission</h3>
-                        <p>To provide innovative, evidence-based, and client-centered advisory services that strengthen programme effectiveness, institutional capacity, accountability, and sustainable development outcomes.</p>
-                    </div>
-                </div>
+            </div>
+            <div>
+                <img src="images/about_kids_hope_1781523830987.png" alt="Children holding HOPE sign">
             </div>
         </div>
     </section>
 
-    <!-- Core Values -->
-    <section class="values-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Core Values</h2>
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+        <div class="container grid-4">
+            <div class="stat-item">
+                <h2>10+</h2>
+                <p>Years of Experience</p>
             </div>
-            <div class="values-grid">
-                <div class="value-card">
-                    <h3>Professionalism</h3>
-                </div>
-                <div class="value-card">
-                    <h3>Integrity</h3>
-                </div>
-                <div class="value-card">
-                    <h3>Innovation</h3>
-                </div>
-                <div class="value-card">
-                    <h3>Quality Excellence</h3>
-                </div>
-                <div class="value-card">
-                    <h3>Collaboration</h3>
-                </div>
-                <div class="value-card">
-                    <h3>Impact Orientation</h3>
-                </div>
+            <div class="stat-item">
+                <h2>50+</h2>
+                <p>Projects Delivered</p>
+            </div>
+            <div class="stat-item">
+                <h2>30+</h2>
+                <p>Partners Collaborated</p>
+            </div>
+            <div class="stat-item">
+                <h2>15+</h2>
+                <p>Countries Reached</p>
             </div>
         </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="why-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Why Choose PMEL Advisory Centre</h2>
-            </div>
-            <div class="why-grid-page">
-                <div class="why-item">
-                    <h4>African Expertise</h4>
-                    <p>Strong understanding of African development and humanitarian contexts</p>
-                </div>
-                <div class="why-item">
-                    <h4>Multidisciplinary Team</h4>
-                    <p>Experienced consultants and technical specialists across sectors</p>
-                </div>
-                <div class="why-item">
-                    <h4>Evidence-Based Approaches</h4>
-                    <p>Results-oriented methodologies grounded in rigorous research</p>
-                </div>
-                <div class="why-item">
-                    <h4>Technical Excellence</h4>
-                    <p>Strong expertise in MEAL, research, and organizational development</p>
-                </div>
-                <div class="why-item">
-                    <h4>Innovation-Driven</h4>
-                    <p>Technology-driven solutions for modern development challenges</p>
-                </div>
-                <div class="why-item">
-                    <h4>Client-Centered</h4>
-                    <p>Participatory methodologies and timely service delivery</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>PMEL Advisory Centre</h3>
-                    <p>Evidence-driven consultancy for sustainable development across Africa</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="expertise.html">Expertise</a></li>
-                        <li><a href="team.html">Team</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>P.O. Box 109752, Kampala</p>
-                    <p>pmelcentre@gmail.com</p>
-                    <p>+256 774 725 437</p>
-                </div>
+        <div class="container grid-4">
+            <div>
+                <div class="footer-logo">PMEL center</div>
+                <p style="font-size: 0.9rem;">Your trusted partner in Programme Management, Monitoring, Evaluation, Research and Learning.</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 PMEL Advisory Centre. All rights reserved.</p>
+            <div>
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="sectors.html">Sectors</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="insights.html">Insights</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Our Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Programme Design & Management</a></li>
+                    <li><a href="#">Monitoring, Evaluation, Research & Learning</a></li>
+                    <li><a href="#">Grant Proposal Development</a></li>
+                    <li><a href="#">Strategic Planning</a></li>
+                    <li><a href="#">Training & Capacity Building</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Our Sectors</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Climate Change & Resilience</a></li>
+                    <li><a href="#">Agriculture & Food Security</a></li>
+                    <li><a href="#">Education & Child Protection</a></li>
+                    <li><a href="#">Humanitarian Response</a></li>
+                    <li><a href="#">Livelihoods & Community Development</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div>&copy; 2026 PMEL Advisory Centre. All Rights Reserved.</div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
             </div>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>

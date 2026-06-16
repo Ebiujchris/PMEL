@@ -5,148 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - PMEL Advisory Centre</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <h2>PMEL Advisory Centre</h2>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="expertise.html">Expertise</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+            <div class="logo-area">
+                <img src="images/logo.jpeg" alt="PMEL Logo" style="height: 50px; width: auto; object-fit: contain; mix-blend-mode: multiply;">
             </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="sectors.html">Sectors</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Get in Touch</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
+    <!-- Contact Top -->
+    <section class="section-padding bg-white">
         <div class="container">
-            <span class="breadcrumb">Home / Contact</span>
-            <h1>Get In Touch</h1>
-            <p>Let's discuss how we can support your development programming</p>
-        </div>
-    </section>
-
-    <!-- Contact Content -->
-    <section class="contact-main">
-        <div class="container">
-            <div class="contact-layout">
-                <div class="contact-info-section">
-                    <h2>Contact Information</h2>
-                    <p>Reach out to us for consultancy services, partnerships, or inquiries about our work.</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-detail-item">
-                            <h4>Address</h4>
-                            <p>P.O. Box 109752<br>Kampala, Uganda</p>
-                        </div>
-                        
-                        <div class="contact-detail-item">
-                            <h4>Email</h4>
-                            <p><a href="mailto:pmelcentre@gmail.com">pmelcentre@gmail.com</a></p>
-                        </div>
-                        
-                        <div class="contact-detail-item">
-                            <h4>Phone</h4>
-                            <p><a href="tel:+256774725437">+256 774 725 437</a></p>
+            <h1 style="margin-bottom: 1rem;">Contact Us</h1>
+            <p style="font-size: 1.1rem; max-width: 600px; margin-bottom: 3rem;">We'd love to hear from you. Get in touch with us for partnerships, inquiries or collaborations.</p>
+            
+            <div class="grid-2" style="align-items: start;">
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4 style="color: var(--primary);">Address</h4>
+                            <p style="margin-bottom: 0;">P.O. Box 109752, Kampala, Uganda</p>
                         </div>
                     </div>
-
-                    <div class="office-hours">
-                        <h4>Office Hours</h4>
-                        <p>Monday - Friday: 8:00 AM - 5:00 PM (EAT)<br>
-                        Saturday - Sunday: Closed</p>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4 style="color: var(--primary);">Phone</h4>
+                            <p style="margin-bottom: 0;">+256 774 725 437</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4 style="color: var(--primary);">Email</h4>
+                            <p style="margin-bottom: 0;">pmelcentre@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🌐</div>
+                        <div>
+                            <h4 style="color: var(--primary);">Website</h4>
+                            <p style="margin-bottom: 0;">www.pmelcentre.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div>
+                            <h4 style="color: var(--primary);">Office Hours</h4>
+                            <p style="margin-bottom: 0;">Monday - Friday, 8:00 AM - 5:00 PM</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="contact-form-section">
-                    <h2>Send Us a Message</h2>
-                    <form class="contact-form-page">
-                        <div class="form-row">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 1.5rem;">Send Us a Message</h3>
+                    <form action="#" method="POST">
+                        <div class="grid-2" style="gap: 1rem;">
                             <div class="form-group">
-                                <label for="name">Full Name *</label>
-                                <input type="text" id="name" name="name" required>
+                                <input type="text" class="form-control" placeholder="Your Name" required>
                             </div>
                             <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
-                            <div class="form-group">
-                                <label for="organization">Organization</label>
-                                <input type="text" id="organization" name="organization">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
                             </div>
                         </div>
-
                         <div class="form-group">
-                            <label for="subject">Subject *</label>
-                            <input type="text" id="subject" name="subject" required>
+                            <input type="text" class="form-control" placeholder="Subject" required>
                         </div>
-
                         <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="6" required></textarea>
+                            <textarea class="form-control" placeholder="Your Message" required></textarea>
                         </div>
-
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
                     </form>
                 </div>
+                
             </div>
+
+            <!-- Map -->
+            <div style="margin-top: 4rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                <img src="images/map_kampala_1781524719206.png" alt="Map of Kampala" style="width: 100%; height: 350px; object-fit: cover; display: block;">
+            </div>
+
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>PMEL Advisory Centre</h3>
-                    <p>Evidence-driven consultancy for sustainable development across Africa</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="expertise.html">Expertise</a></li>
-                        <li><a href="team.html">Team</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>P.O. Box 109752, Kampala</p>
-                    <p>pmelcentre@gmail.com</p>
-                    <p>+256 774 725 437</p>
-                </div>
+        <div class="container grid-4">
+            <div>
+                <div class="footer-logo">PMEL center</div>
+                <p style="font-size: 0.9rem;">Your trusted partner in Programme Management, Monitoring, Evaluation, Research and Learning.</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 PMEL Advisory Centre. All rights reserved.</p>
+            <div>
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="sectors.html">Sectors</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="insights.html">Insights</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Our Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Programme Design & Management</a></li>
+                    <li><a href="#">Monitoring, Evaluation, Research & Learning</a></li>
+                    <li><a href="#">Grant Proposal Development</a></li>
+                    <li><a href="#">Strategic Planning</a></li>
+                    <li><a href="#">Training & Capacity Building</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Our Sectors</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Climate Change & Resilience</a></li>
+                    <li><a href="#">Agriculture & Food Security</a></li>
+                    <li><a href="#">Education & Child Protection</a></li>
+                    <li><a href="#">Humanitarian Response</a></li>
+                    <li><a href="#">Livelihoods & Community Development</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div>&copy; 2026 PMEL Advisory Centre. All Rights Reserved.</div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
             </div>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
